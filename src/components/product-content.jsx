@@ -1,4 +1,4 @@
-var products = [
+const Products = [
     {
         image: "https://wp.alithemes.com/html/guza/demos/assets/imgs/page/homepage2/product1.png",
         name: "Product",
@@ -48,3 +48,5 @@ var products = [
         price: 800,
     },
 ];
+
+export default Products;
