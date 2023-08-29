@@ -1,24 +1,31 @@
 import "./style.css";
-import Products from "./product-content"
+import Products from "./product-content";
+
 function ProductArea() {
     return (
-        <div className="main">
-            {showContent(Products)}
-        </div>
-    )
-}
-
-function showContent(Products) {
-    Products.map((product, idx) => {
-        <div class="card" style={{ width: '18rem' }}>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="index.html" class="btn btn-primary">Go somewhere</a>
+        <div className="product-area pt-5">
+            <div className="container">
+                <div className="row">
+                    {Products.map((product, idx) => (
+                        <div className="col-lg-3 col-md-6 col-12 mt-5" key={idx}>
+                            <div className="card">
+                                <div className="card-img p-4">
+                                    <img src={product.image} className="card-img-top h-100" alt="" />
+                                </div>
+                                <div className="card-body">
+                                    <h4 className="card-title mb-2">{product.name + (idx+1)}</h4>
+                                    <p className="card-text mb-2">{product.description}</p>
+                                    <h5 className="h5 mb-4">Product Price : ${product.price}</h5>
+                                    <a href="index.html" className="btn btn-danger me-2"><i class="ri-heart-line"></i></a>
+                                    <a href="index.html" className="btn btn-success"><i class="ri-shopping-cart-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-    })
+    );
 }
 
 export default ProductArea;
