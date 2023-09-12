@@ -68,3 +68,44 @@
 h5{
     font-weight: 400 !important;
 }
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s linear;
+}
+.search-input:hover{
+    border: 1px solid #000;
+}
+.search-input:focus{
+    border: 1px solid #2665b7;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+.icon-container{
+    position: absolute;
+    right: 20px;
+    background-color: #2665b7;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+}
