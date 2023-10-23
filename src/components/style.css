@@ -73,9 +73,9 @@ h5{
     display: flex;
     align-items: center;
     padding: 0px 12px;
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .search-input {
@@ -108,4 +108,24 @@ h5{
     font-size: 18px;
     color: white;
     border-radius: 4px;
+}
+
+
+.color-area{
+    display: block;
+    width: 20px;
+    height: 20px;
+    outline: 1px solid black;
+    outline-offset: 2px;
+}
+
+.aside{
+    min-height: 100vh;
+    min-width: 25%;
+    background-color: #2665b7;
+    position: fixed;
+}
+
+.filter-container{
+    margin-top: 100px;
 }
