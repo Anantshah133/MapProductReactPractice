@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filterColor, setFilterColor] = useState(''); // Add a state for color filter
+  const [filterColor, setFilterColor] = useState('');
   const [filterType, setFilterType] = useState('');
   const handleSearchChange = (query) => {
     setSearchQuery(query);
